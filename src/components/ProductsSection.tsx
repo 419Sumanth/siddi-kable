@@ -43,11 +43,10 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
               <button
                 key={brand.id}
                 onClick={() => onSelectBrand(brand.id)}
-                className={`flex items-center justify-between p-3.5 rounded-lg transition-all text-left ${
-                  isActive
-                    ? 'bg-white text-slate-950 shadow-sm border border-slate-200/90'
-                    : 'text-slate-600 hover:text-slate-950 hover:bg-slate-200/50'
-                }`}
+                className={`flex items-center justify-between p-3.5 rounded-lg transition-all text-left ${isActive
+                  ? 'bg-white text-slate-950 shadow-sm border border-slate-200/90'
+                  : 'text-slate-600 hover:text-slate-950 hover:bg-slate-200/50'
+                  }`}
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <div className="w-10 h-7 flex items-center justify-center shrink-0 bg-slate-50 border border-slate-200 rounded p-0.5">
@@ -55,7 +54,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                       src={brand.logo}
                       alt={brand.name}
                       className="max-h-full max-w-full object-contain"
-                      referrerPolicy="no-referrer"
+
                     />
                   </div>
                   <div className="truncate">
@@ -83,7 +82,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                       src={currentBrand.logo}
                       alt={currentBrand.name}
                       className="max-h-8 max-w-full object-contain"
-                      referrerPolicy="no-referrer"
+
                     />
                   </div>
                   <div className="text-right">
@@ -97,7 +96,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                     src={currentBrand.image}
                     alt={`${currentBrand.name} Industrial Solutions`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
+
                   />
                   <div className="absolute top-3 right-3 bg-slate-900/85 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
                     Genuine Distribution
@@ -113,7 +112,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
               </div>
 
               {/* Action Buttons */}
-              <div className="pt-6 mt-6 border-t border-slate-200 flex flex-wrap gap-3">
+              {/* <div className="pt-6 mt-6 border-t border-slate-200 flex flex-wrap gap-3">
                 <button
                   onClick={() => onOpenBrandDetails(currentBrand)}
                   className="px-4 py-2.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow-sm transition-all flex items-center gap-1.5 active:scale-[0.98]"
@@ -128,7 +127,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                   <span>Contact Sales Desk</span>
                   <ArrowUpRight className="w-3.5 h-3.5 text-slate-500" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Right: Technical Product Categories Grid */}
@@ -209,11 +208,10 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
               <div
                 key={brand.id}
                 onClick={() => onOpenBrandDetails(brand)}
-                className={`p-5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between group ${
-                  brand.id === currentBrand.id
-                    ? 'border-amber-500 bg-amber-50/20 shadow-md ring-1 ring-amber-500'
-                    : 'border-slate-200 bg-white hover:border-slate-300 hover:shadow-sm'
-                }`}
+                className={`p-5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between group ${brand.id === currentBrand.id
+                  ? 'border-amber-500 bg-amber-50/20 shadow-md ring-1 ring-amber-500'
+                  : 'border-slate-200 bg-white hover:border-slate-300 hover:shadow-sm'
+                  }`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-3 mb-3">
@@ -222,7 +220,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                         src={brand.logo}
                         alt={brand.name}
                         className="max-h-full max-w-full object-contain"
-                        referrerPolicy="no-referrer"
+
                       />
                     </div>
                     <span className="text-[10px] font-semibold text-slate-500 font-mono">
@@ -235,7 +233,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                       src={brand.image}
                       alt={brand.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      referrerPolicy="no-referrer"
+
                     />
                   </div>
 
@@ -259,10 +257,10 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({
                   </div>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-amber-600 group-hover:text-amber-700">
+                {/* <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-amber-600 group-hover:text-amber-700">
                   <span>Explore Catalog</span>
                   <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, ArrowUpRight } from 'lucide-react';
-import { COMPANY_INFO, FOUR_PRODUCTS } from '../data/websiteContent';
+import { COMPANY_INFO, FOUR_PRODUCTS, companyLogo } from '../data/websiteContent';
 
 interface FooterProps {
   onSelectBrand: (brandId: string) => void;
@@ -16,10 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectBrand, onRequestQuote })
           <div className="lg:col-span-4 space-y-4">
             <a href="#hero" className="inline-block p-2 bg-white rounded-lg shadow-sm">
               <img
-                src="/images/logo.png"
-                alt="Siddhi Kabel Corporation Pvt Ltd"
-                className="h-10 w-auto object-contain"
-                referrerPolicy="no-referrer"
+                src={companyLogo} alt="Siddhi Kabel Corporation Pvt Ltd" className="h-10 w-auto object-contain"
               />
             </a>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Menu, X, ArrowUpRight } from 'lucide-react';
-import { COMPANY_INFO } from '../data/websiteContent';
+import { COMPANY_INFO, companyLogo } from '../data/websiteContent';
 
 interface NavbarProps {
   onRequestQuote?: (brandPref?: string) => void;
@@ -65,10 +65,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
         {/* Zone 1: Exact Original Logo */}
         <a href="#video-banner" className="flex items-center shrink-0 group">
           <img
-            src="/images/logo.png"
-            alt="Siddhi Kabel Corporation Pvt Ltd"
-            className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-            referrerPolicy="no-referrer"
+            src={companyLogo} alt="Siddhi Kabel Corporation Pvt Ltd" className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
           />
         </a>
 

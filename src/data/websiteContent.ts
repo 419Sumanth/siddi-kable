@@ -1,3 +1,25 @@
+import lappProductImage from '../assets/images/product_lapp_cables_1792987894896.jpg';
+import eatonProductImage from '../assets/images/product_eaton_switchgear_1792987895288.jpg';
+import mennekesProductImage from '../assets/images/product_mennekes_plugs_1792987895718.jpg';
+import partexProductImage from '../assets/images/product_partex_marking_1792987896251.jpg';
+import lappLogo from '../assets/images/lapp.png';
+import eatonLogo from '../assets/images/eaton.png';
+import mennekesLogo from '../assets/images/mennekes.png';
+import partexLogo from '../assets/images/partex.svg';
+import companyLogo from '../assets/images/logo.png';
+
+import toyotaLogo from '../assets/images/toyota.png';
+import tataMotorsLogo from '../assets/images/tata-motors.png';
+import tvsLogo from '../assets/images/tvs.png';
+import belLogo from '../assets/images/bel.png';
+import bemlLogo from '../assets/images/beml.png';
+import skfLogo from '../assets/images/skf.png';
+import rittalLogo from '../assets/images/rittal.png';
+import kennametalLogo from '../assets/images/kennametal.png';
+import geTransportationLogo from '../assets/images/ge-transportation.png';
+
+export { companyLogo, lappLogo, eatonLogo, mennekesLogo, partexLogo, toyotaLogo, tataMotorsLogo, tvsLogo, belLogo, bemlLogo, skfLogo, rittalLogo, kennametalLogo, geTransportationLogo };
+
 export interface ProductBrand {
   id: 'lapp' | 'eaton' | 'mennekes' | 'partex';
   name: string;
@@ -19,8 +41,8 @@ export const FOUR_PRODUCTS: ProductBrand[] = [
     name: 'LAPP',
     tagline: 'World-Leading Industrial Cables, Connectors & Accessories',
     country: 'Stuttgart, Germany',
-    logo: '/images/lapp.png',
-    image: '/src/assets/images/product_lapp_cables_1792987894896.jpg',
+    logo: lappLogo,
+    image: lappProductImage,
     description: 'Lapp Cables produces world-class cables, wires, and conductors engineered for demanding industrial automation, mechanical engineering, and plant manufacturing.',
     categories: [
       {
@@ -71,8 +93,8 @@ export const FOUR_PRODUCTS: ProductBrand[] = [
     name: 'EATON',
     tagline: 'Moeller Series Industrial Switchgears & Intelligent Motor Control',
     country: 'Cleveland, USA / Bonn, Germany',
-    logo: '/images/eaton.png',
-    image: '/src/assets/images/product_eaton_switchgear_1792987895288.jpg',
+    logo: eatonLogo,
+    image: eatonProductImage,
     description: 'Eaton produces a broad range of high-reliability switchgears and motor-protective equipment, engineered to ensure uninterrupted uptime, safety, and energy control for Indian industry.',
     categories: [
       {
@@ -123,8 +145,8 @@ export const FOUR_PRODUCTS: ProductBrand[] = [
     name: 'MENNEKES',
     tagline: 'World-Renowned Industrial CEE Plugs, Sockets & Receptacle Combinations',
     country: 'Kirchhundem, Germany',
-    logo: '/images/mennekes.png',
-    image: '/src/assets/images/product_mennekes_plugs_1792987895718.jpg',
+    logo: mennekesLogo,
+    image: mennekesProductImage,
     description: 'MENNEKES is the global benchmark for industrial plugs, sockets, and heavy-duty power distribution systems, engineered for extreme mechanical resilience, dust, water, and chemical resistance.',
     categories: [
       {
@@ -175,8 +197,8 @@ export const FOUR_PRODUCTS: ProductBrand[] = [
     name: 'PARTEX',
     tagline: 'Global Leader in Industrial Wire, Cable & Panel Marking Systems',
     country: 'Gullspang, Sweden',
-    logo: '/images/partex.svg',
-    image: '/src/assets/images/product_partex_marking_1792987896251.jpg',
+    logo: partexLogo,
+    image: partexProductImage,
     description: 'Partex Marking Systems is the undisputed pioneer in wire and cable identification, cable marking sleeves, stainless steel tags, and thermal printing systems for industrial control cabinets.',
     categories: [
       {
@@ -290,13 +312,13 @@ export const WHY_CHOOSE_US = [
 ];
 
 export const CLIENT_LOGOS = [
-  { name: 'Toyota Kirloskar', logo: '/images/toyota.png' },
-  { name: 'Tata Motors', logo: '/images/tata-motors.png' },
-  { name: 'TVS Motor', logo: '/images/tvs.png' },
-  { name: 'Bharat Electronics (BEL)', logo: '/images/bel.png' },
-  { name: 'BEML Limited', logo: '/images/beml.png' },
-  { name: 'SKF Bearings', logo: '/images/skf.png' },
-  { name: 'Rittal Enclosures', logo: '/images/rittal.png' },
-  { name: 'Kennametal', logo: '/images/kennametal.png' },
-  { name: 'GE Transportation', logo: '/images/ge-transportation.png' }
+  { name: 'Toyota Kirloskar', logo: toyotaLogo },
+  { name: 'Tata Motors', logo: tataMotorsLogo },
+  { name: 'TVS Motor', logo: tvsLogo },
+  { name: 'Bharat Electronics (BEL)', logo: belLogo },
+  { name: 'BEML Limited', logo: bemlLogo },
+  { name: 'SKF Bearings', logo: skfLogo },
+  { name: 'Rittal Enclosures', logo: rittalLogo },
+  { name: 'Kennametal', logo: kennametalLogo },
+  { name: 'GE Transportation', logo: geTransportationLogo }
 ];

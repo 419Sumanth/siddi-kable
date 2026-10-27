@@ -65,7 +65,7 @@ export const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Bottom Trust Banner */}
-        <div className="mt-12 p-6 bg-slate-900 text-white rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        {/* <div className="mt-12 p-6 bg-slate-900 text-white rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="max-w-2xl">
             <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider">
               Prompt Dispatches Across India
@@ -85,7 +85,7 @@ export const WhyChooseUs: React.FC = () => {
               Consult Our Technical Desk
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

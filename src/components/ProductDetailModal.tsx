@@ -45,7 +45,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 src={brand.logo}
                 alt={brand.name}
                 className="max-h-7 max-w-full object-contain"
-                referrerPolicy="no-referrer"
+                
               />
             </div>
             <div>
@@ -73,7 +73,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 src={brand.image}
                 alt={brand.name}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+                
               />
             </div>
             <div className="md:col-span-7">

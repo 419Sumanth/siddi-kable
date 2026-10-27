@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, CheckCircle2, ChevronRight, Layers } from 'lucide-react';
-import { COMPANY_INFO, FOUR_PRODUCTS } from '../data/websiteContent';
+import { COMPANY_INFO, FOUR_PRODUCTS, CLIENT_LOGOS } from '../data/websiteContent';
+import heroFacilityImage from '../assets/images/hero_industrial_facility_1792987893482.jpg';
 
 interface HeroProps {
   onRequestQuote?: (brandPref?: string) => void;
@@ -68,20 +69,20 @@ export const Hero: React.FC<HeroProps> = ({ onSelectBrand }) => {
 
             {/* Action CTAs */}
             <div className="flex flex-wrap items-center gap-4">
-              <a
+              {/* <a
                 href="#products"
                 className="px-6 py-3 text-sm font-semibold text-white bg-amber-600 hover:bg-amber-500 rounded-lg shadow-sm hover:shadow active:scale-[0.98] transition-all flex items-center gap-2"
               >
                 <span>Explore Products</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href="#contact"
                 className="px-6 py-3 text-sm font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 rounded-lg transition-colors"
               >
                 Contact Details
-              </a>
+              </a> */}
 
               <div className="flex items-center gap-2 text-xs text-slate-500 ml-1">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -94,10 +95,10 @@ export const Hero: React.FC<HeroProps> = ({ onSelectBrand }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-950 aspect-[4/3] lg:aspect-auto lg:h-[460px] group">
               <img
-                src="/src/assets/images/hero_industrial_facility_1792987893482.jpg"
+                src={heroFacilityImage}
                 alt="Siddhi Kabel Industrial Automation and Electrical Solutions"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                referrerPolicy="no-referrer"
+
               />
               {/* Measured contrast scrim */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
@@ -151,6 +152,28 @@ export const Hero: React.FC<HeroProps> = ({ onSelectBrand }) => {
             <div className="text-xs font-semibold text-slate-900 mt-0.5">Customers Served</div>
             <div className="text-xs text-slate-500 mt-0.5">Automotive, aerospace & machine tools</div>
           </div>
+          {/* Client Brands Logos Strip */}
+          <div className="mt-12 pt-8 border-t border-slate-200">
+            {/* <p className="text-center text-xs font-semibold uppercase tracking-wider text-slate-500 mb-6">
+              Trusted by India's Foremost Manufacturing, Automotive & Aerospace Leaders
+            </p> */}
+            {/* <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 gap-4 items-center">
+              {CLIENT_LOGOS.map((client, idx) => (
+                <div
+                  key={idx}
+                  className="h-14 p-2 bg-slate-50 hover:bg-white rounded-lg border border-slate-200/80 flex items-center justify-center transition-all hover:shadow-xs group"
+                  title={client.name}
+                >
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-h-8 max-w-full object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-200"
+                  />
+                </div>
+              ))}
+            </div> */}
+          </div>
+
         </div>
       </div>
     </section>
